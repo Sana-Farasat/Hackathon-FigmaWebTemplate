@@ -109,8 +109,8 @@ export default function Header() {
 </li>
 
     <li><Link href='/404'>Pages</Link></li>
-    <li>Product</li>
-    <li>Blog</li>
+    <li><Link href='/product'>Product</Link></li>
+    <li><Link href='/blog'>Blog</Link></li>
     <li><Link href='/shop'>Shop</Link></li>
     <li><Link href='/contact'>Contact</Link></li>
 </ul>
@@ -130,7 +130,7 @@ export default function Header() {
   <ul className='flex flex-col space-y-4 font-bold items-center'>
   <li>
     <DropdownMenu>
-  <DropdownMenuTrigger className='flex justify-center items-center text-pink-500'>Home <ChevronUp size={16}/></DropdownMenuTrigger>
+  <DropdownMenuTrigger className='flex justify-center items-center text-pink-500 select-none'>Home <ChevronUp size={16}/></DropdownMenuTrigger>
   <DropdownMenuContent>
     
     <DropdownMenuItem><Link href='/'>Home</Link></DropdownMenuItem>
@@ -142,8 +142,8 @@ export default function Header() {
 </li>
 
     <li><Link href='/404'>Pages</Link></li>
-    <li>Product</li>
-    <li>Blog</li>
+    <li><Link href='/product'>Product</Link></li>
+    <li><Link href='/blog'>Blog</Link></li>
     <li><Link href='/shop'>Shop</Link></li>
     <li><Link href='/contact'>Contact</Link></li>
 </ul>

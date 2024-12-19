@@ -28,10 +28,10 @@ export default function Hero() {
     <h2 className='text-2xl font-extrabold text-center my-7 font-[josefin Sans] tracking-widest'>Featured Products</h2>
 </div>
 
-<div className='flex justify-around'>
+<div className='flex flex-col space-y-28 justify-center items-center md:flex-row md:gap-2 md:mx-2 lg:justify-around'>
     {/* ------------Card 1----------------*/}
-<div className=' w-48 h-52'>
-    <div className='bg-gray-50 h-48 pt-4'>
+<div className=' w-48 h-64'>
+    <div className='bg-gray-50 h-48 pt-6'>
     <Image src="/images/image1.png" alt='image3' height={350} width={350}/>
     </div>
     <div className='bg-white shadow-lg py-2'>
@@ -92,7 +92,7 @@ export default function Hero() {
 </div>
 {/* --------------Nav Links----------------- */}
 <div>
-    <ul className='flex justify-center gap-8'>
+    <ul className='flex justify-center gap-4 px-1 md:px-0 md:gap-8'>
         <li className='text-[#FB2E86] underline'>New Arrival</li>
         <li>Best Seller</li>
         <li>Featured</li>
@@ -101,9 +101,9 @@ export default function Hero() {
 </div>
 
 {/* --------------Frame 1----------------- */}
-<div className='flex gap-20 my-7 mx-28'>
+<div className='flex flex-col md:flex-row space-y-1 md:gap-20 my-2 md:my-7 mx-auto md:mx-28'>
 {/* --------------Card 1----------------- */}
-<div className='h-[306px] w-[320px]'>
+<div className='h-[306px] w-[320px] layout-responsive mx-auto'>
     <div className='bg-[#F7F7F7] flex justify-center '>
         <Image src="/images/framepic1.png" alt='framepic1' height={200} width={200}/>
     </div>
@@ -114,7 +114,7 @@ export default function Hero() {
 </div>
 
 {/* --------------Card 2----------------- */}
-<div className='h-[306px] w-[320px]'>
+<div className='h-[306px] w-[320px] layout-responsive mx-auto'>
     <div className='bg-slate-50 flex justify-center '>
         <Image src="/images/framepic2.png" alt='framepic2' height={200} width={200}/>
     </div>
@@ -125,7 +125,7 @@ export default function Hero() {
 </div>
 
 {/* --------------Card 3----------------- */}
-<div className='h-[306px] w-[320px]'>
+<div className='h-[306px] w-[320px] layout-responsive mx-auto'>
     <div className='bg-[#F7F7F7] flex justify-center '>
         <Image src="/images/framepic3.png" alt='framepic3' height={270} width={270}/>
     </div>
@@ -137,9 +137,9 @@ export default function Hero() {
 </div>
 
 {/* --------------Frame 2----------------- */}
-<div className='flex gap-20 my-7 mx-28'>
+<div className='flex flex-col md:flex-row space-y-1 md:gap-20 my-2 md:my-7 mx-auto md:mx-28'>
 {/* --------------Card 1----------------- */}
-<div className='h-[306px] w-[320px]'>
+<div className='h-[306px] w-[320px] layout-responsive mx-auto'>
     <div className='bg-[#F7F7F7] flex justify-center '>
         <Image src="/images/framepic4.png" alt='framepic4' height={200} width={200}/>
     </div>
@@ -150,7 +150,7 @@ export default function Hero() {
 </div>
 
 {/* --------------Card 2----------------- */}
-<div className='h-[306px] w-[320px]'>
+<div className='h-[306px] w-[320px] layout-responsive mx-auto'>
     <div className='bg-slate-50 flex justify-center '>
         <Image src="/images/framepic5.png" alt='framepic5' height={200} width={200}/>
     </div>
@@ -161,7 +161,7 @@ export default function Hero() {
 </div>
 
 {/* --------------Card 3----------------- */}
-<div className='h-[306px] w-[320px]'>
+<div className='h-[306px] w-[320px] layout-responsive mx-auto'>
     <div className='bg-[#F7F7F7] flex justify-center '>
         <Image src="/images/framepic1.png" alt='framepic6' height={200} width={200}/>
     </div>
@@ -178,7 +178,7 @@ export default function Hero() {
     <h2 className='text-[#151875] text-2xl font-extrabold text-center my-7 font-[josefin Sans] tracking-widest'>What Shopex Offers!</h2>
 </div>
 {/* --------------Main Div----------------- */}
-<div className='flex justify-evenly'>
+<div className=' w-auto flex flex-col justify-center items-center space-y-7 md:px-2 md:flex-row md:gap-3 lg:justify-evenly'>
 
     {/* --------------Card 1----------------- */}
     <div className='bg-white shadow-lg h-64 w-48 flex flex-col justify-center items-center'>
@@ -216,15 +216,15 @@ export default function Hero() {
 
 {/* --------------Section 5----------------- */}
 
-<div className='bg-[#F1F0FF] opacity-[100%] h-96 my-20 flex items-center gap-20 px-48'>
+<div className='bg-[#F1F0FF] opacity-[100%] h-auto lg:h-96 my-20 flex flex-col md:flex-row items-center gap-20 px-3 xl:px-48'>
 {/* --------------Div 1----------------- */}
     <div >
-<Image src="/images/sofa2.png" alt='sofa' height={350} width={350} />
+<Image src="/images/sofa2.png" alt='sofa' height={350} width={350} className='layout-responsive' />
 </div>
 
 {/* --------------Div 2----------------- */}
 <div>
-<h2 className='text-3xl text-[#151875] font-bold mb-3 tracking-widest font-[josefin Sans]'>Unique Features Of Latest & <br />Trending Products</h2>
+<h2 className='text-xl md:2xl lg:text-3xl text-[#151875] font-bold mb-3 tracking-widest font-[josefin Sans]'>Unique Features Of Latest & <br />Trending Products</h2>
 <ul className='list-disc pl-5 text-gray-500 mb-2'>
     <li>All frames constructed with hardwood solids and laminates </li>
     <li>Reinforces with double wood dowels , screw and glue</li>
@@ -282,7 +282,7 @@ export default function Hero() {
     </div>
     <br />
 {/* --------------Frame 2----------------- */}
-<div className='flex flex-col justify-center  items-center md:flex-row mx-1 md:mx-16 xl:mx-[14em] space-y-5 md:gap-4 lg:gap-7 xl:gap-14'>
+<div className='flex flex-col justify-center  items-center md:flex-row mx-1 md:mx-4 xl:mx-[14em] space-y-5 md:gap-4 lg:gap-7 xl:gap-14'>
     {/* --------------Card 1----------------- */}
 <div className='bg-pink-200 h-48 w-80'>
 <p className='text-[#151875] font-extrabold text-xl pt-2 pl-1'>23% Off in all products</p>
